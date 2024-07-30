@@ -1,0 +1,46 @@
+<library path="lib/libkth_franka_controllers">
+  
+  <class name="kth_franka_controllers/ARTeleopFrankaController" type="kth_franka_controllers::ARTeleopFrankaController" base_class_type="controller_interface::ControllerBase">
+    <description>
+      A controller for the AR puppeteer app
+    </description>
+  </class>  
+
+    <class name="kth_franka_controllers/KthDualArmCentroidPoseEffortInterfaceController" type="kth_franka_controllers::KthDualArmCentroidPoseEffortInterfaceController" base_class_type="controller_interface::ControllerBase">
+    <description>
+      A controller that renders Cartesian impedance based tracking of separate target poses for 2 panda arms.
+    </description>
+  </class>    
+  
+  <class name="kth_franka_controllers/KthCartesianPoseEffortInterfaceController" type="kth_franka_controllers::KthCartesianPoseEffortInterfaceController" base_class_type="controller_interface::ControllerBase">
+    <description>
+      A controller that renders Cartesian based tracking of a single panda using toughe controle.
+    </description>
+  </class>  
+  
+  <class name="kth_franka_controllers/KthCartesianVelocityEffortInterfaceController" type="kth_franka_controllers::KthCartesianVelocityEffortInterfaceController" base_class_type="controller_interface::ControllerBase">
+    <description>
+      A controller that renders Cartesian based tracking of a single panda using toughe controle.
+    </description>
+  </class>  
+
+  <class name="kth_franka_controllers/KthJointPoseEffortInterfaceController" type="kth_franka_controllers::KthJointPoseEffortInterfaceController" base_class_type="controller_interface::ControllerBase">
+    <description>
+      A controller that renders joint based tracking of a single panda using toughe controle.
+    </description>
+  </class>  
+
+  <class name="kth_franka_controllers/KthJointVelocityEffortInterfaceController" type="kth_franka_controllers::KthJointVelocityEffortInterfaceController" base_class_type="controller_interface::ControllerBase">
+    <description>
+      A controller that renders joint based tracking of a single panda using toughe controle.
+    </description>
+  </class>  
+
+   <class name="kth_franka_controllers/KthJointAccelerationEffortInterfaceController" type="kth_franka_controllers::KthJointAccelerationEffortInterfaceController" base_class_type="controller_interface::ControllerBase">
+    <description>
+      A controller that renders joint based tracking of acc
+    </description>
+  </class>  
+
+
+</library>
