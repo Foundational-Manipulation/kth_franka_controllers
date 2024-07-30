@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<launch>
+
+<node pkg="tf" type="static_transform_publisher" name="worldtopanda0" args="0 0 0 0 0 0 world panda_link0 100" />
+<rosparam command="load" file="$(find kth_franka_controllers)/config/kth_franka_controllers.yaml" />
+  <node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false" output="screen"  args="kth_cartesian_velocity_effort_interface_controller"/>
+
+ 
+
+
+</launch>
