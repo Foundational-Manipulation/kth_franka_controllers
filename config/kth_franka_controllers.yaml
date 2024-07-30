@@ -19,7 +19,7 @@ ar_teleop_franka_controller:
     impedance: 1 
 
 kth_cartesian_velocity_effort_interface_controller:
-    type: franka_example_controllers/KthCartesianVelocityEffortInterfaceController    
+    type: kth_franka_controllers/KthCartesianVelocityEffortInterfaceController    
     arm_id: panda
     joint_names:
         - panda_joint1
@@ -44,7 +44,7 @@ kth_cartesian_velocity_effort_interface_controller:
     Mdor: 1.0
 
 kth_cartesian_pose_effort_interface_controller:
-    type: franka_example_controllers/KthCartesianPoseEffortInterfaceController    
+    type: kth_franka_controllers/KthCartesianPoseEffortInterfaceController    
     arm_id: panda
     joint_names:
         - panda_joint1
@@ -69,7 +69,7 @@ kth_cartesian_pose_effort_interface_controller:
     Mdor: 1.0
 
 kth_joint_pose_effort_interface_controller:
-    type: franka_example_controllers/KthJointPoseEffortInterfaceController    
+    type: kth_franka_controllers/KthJointPoseEffortInterfaceController    
     arm_id: panda
     joint_names:
         - panda_joint1
@@ -94,7 +94,7 @@ kth_joint_pose_effort_interface_controller:
     Mdor: 1.0
 
 kth_joint_velocity_effort_interface_controller:
-    type: franka_example_controllers/KthJointVelocityEffortInterfaceController    
+    type: kth_franka_controllers/KthJointVelocityEffortInterfaceController    
     arm_id: panda
     joint_names:
         - panda_joint1
@@ -119,7 +119,7 @@ kth_joint_velocity_effort_interface_controller:
     Mdor: 1.0
 
 kth_joint_acceleration_effort_interface_controller:
-    type: franka_example_controllers/KthJointAccelerationEffortInterfaceController    
+    type: kth_franka_controllers/KthJointAccelerationEffortInterfaceController    
     arm_id: panda
     joint_names:
         - panda_joint1
@@ -145,7 +145,7 @@ kth_joint_acceleration_effort_interface_controller:
 
 
 kth_dual_arm_centroid_pose_effort_interface_controller:
-    type: franka_example_controllers/KthDualArmCentroidPoseEffortInterfaceController
+    type: kth_franka_controllers/KthDualArmCentroidPoseEffortInterfaceController
     left:
         arm_id: panda_left
         joint_names:
