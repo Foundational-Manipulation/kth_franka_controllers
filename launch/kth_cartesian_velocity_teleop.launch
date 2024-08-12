@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<launch>
+
+<node pkg="tf" type="static_transform_publisher" name="worldtopanda0" args="0 0 0 0 0 0 world panda_link0 100" />
+<rosparam command="load" file="$(find kth_franka_controllers)/config/kth_franka_controllers.yaml" />
+  <node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false" output="screen"  args="kth_cartesian_velocity_effort_interface_controller"/>
+
+
+ <!-- teleop tcp endpoint -->
+ <arg name="tcp_ip" default="172.16.0.11"/>
+    <arg name="tcp_port" default="10000"/>
+
+    <node name="unity_endpoint" pkg="ros_tcp_endpoint" type="default_server_endpoint.py" output="screen">
+        <param name="tcp_ip" type="string" value="$(arg tcp_ip)"/>
+        <param name="tcp_port" type="int" value="$(arg tcp_port)"/>
+    </node>
+
+ 
+
+
+</launch>
